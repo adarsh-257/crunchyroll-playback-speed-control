@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crunchyroll Speed Control</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background overlay (Strawhat.jpg via CSS) -->
+  <div class="bg-layer"></div>
+
+  <div class="popup-container glass-panel">
+    
+    <header class="card-header">
+      <span class="badge">CRUNCHYROLL</span>
+      <h1 class="title">Playback Speed Control</h1>
+      <div class="divider"></div>
+    </header>
+
+    <div class="current-speed-display glass-panel">
+      <div class="speed-label">
+        <span class="icon">⚡</span>
+        <span>CURRENT SPEED</span>
+      </div>
+      <span class="speed-value" id="currentSpeed">1.00x</span>
+    </div>
+
+    <div class="button-grid" id="speedGrid">
+      <button class="speed-btn glass-btn" data-speed="0.25">
+        <span class="btn-label">0.25x</span>
+        <span class="btn-subtitle">Slowest</span>
+      </button>
+      <button class="speed-btn glass-btn" data-speed="0.50">
+        <span class="btn-label">0.50x</span>
+        <span class="btn-subtitle">Slower</span>
+      </button>
+      <button class="speed-btn glass-btn" data-speed="0.75">
+        <span class="btn-label">0.75x</span>
+        <span class="btn-subtitle">Slow</span>
+      </button>
+      <button class="speed-btn glass-btn active" data-speed="1.00">
+        <span class="btn-label">1.00x</span>
+        <span class="btn-subtitle">Normal</span>
+      </button>
+      <button class="speed-btn glass-btn" data-speed="1.25">
+        <span class="btn-label">1.25x</span>
+        <span class="btn-subtitle">Fast</span>
+      </button>
+      <button class="speed-btn glass-btn" data-speed="1.50">
+        <span class="btn-label">1.50x</span>
+        <span class="btn-subtitle">Faster</span>
+      </button>
+      <button class="speed-btn glass-btn" data-speed="1.75">
+        <span class="btn-label">1.75x</span>
+        <span class="btn-subtitle">Very Fast</span>
+      </button>
+      <button class="speed-btn glass-btn" data-speed="2.00">
+        <span class="btn-label">2.00x</span>
+        <span class="btn-subtitle">Maximum</span>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <span>🍿 Enjoy your anime! 🍿</span>
+    </footer>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
